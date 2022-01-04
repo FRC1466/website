@@ -1,0 +1,34 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+header{
+    margin: 0px;
+    height: 100px;
+    background: rgb(135, 220, 124);
+    display: grid;
+    grid-template-rows: auto 40%;
+}
+
+#title{
+    
+}
+
+nav{
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navContainer{
+    background: rgb(115, 200, 104);
+    width: 100%;
+    display: flex;
+}
+
+.navContainer a{
+    margin: auto;
+}
+
