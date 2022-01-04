@@ -1,24 +1,42 @@
-body, html{
+body{
     margin: 0px;
     padding: 0px;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: auto 200px 200px 200px 200px auto;
+    grid-template-columns: 70% 30%;
 }
 
 header{
+    grid-column-start: 1;
+    grid-column-end: span 2;
     margin: 0px;
-    height: 100px;
-    background: rgb(135, 220, 124);
-    display: grid;
-    grid-template-rows: auto 40%;
+    background: rgb(55, 185, 90);
+    display: flex;
+    flex-direction: column;
 }
 
 #title{
-    
+    grid-row-start: 1;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#title img{
+    height: 70px;
+    margin: 10px;
+}
+
+#title a{
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 nav{
-    grid-row-start: 2;
+    height: 50px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -32,4 +50,11 @@ nav{
 .navContainer a{
     margin: auto;
 }
+
+#general{
+    grid-row-start: 2;
+    background: 
+}
+
+
 
