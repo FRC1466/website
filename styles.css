@@ -3,9 +3,7 @@ body{
     padding: 0px;
     height: auto;
     font-family: sans-serif;
-    display: grid;
-    grid-template-rows: auto 400px 200px 200px 200px auto;
-    grid-template-columns: 40% 20% 40%;
+    
 }
 
 header{
@@ -77,8 +75,6 @@ article{
     grid-column-start: 2;
     grid-column-end: span 2;
 }
-
-
 
 
 footer img{

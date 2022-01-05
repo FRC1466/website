@@ -7,7 +7,7 @@ There might be more socials to link to as well
 
 var footer = document.createElement('footer');
 
-footer.style.cssText += 'grid-row-start: 6; grid-column-end: span 3; background: rgb(100,100,100);';
+footer.style.cssText += 'grid-row-start: -1; grid-column-end: span 3; background: rgb(100,100,100);';
 
 var fbLink = document.createElement('a');
 fbLink.setAttribute('href', 'https://www.facebook.com/FIRST1466/');
