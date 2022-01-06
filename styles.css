@@ -51,7 +51,36 @@ nav{
 
 article{
     background: rgb(236, 237, 244);
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pContainer{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.pContainer p{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.aContainer{
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.aContainer a{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #general{
