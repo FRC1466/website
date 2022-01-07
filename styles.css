@@ -50,7 +50,7 @@ nav{
 }
 
 article{
-    background: rgb(236, 237, 244);
+    background: rgb(230, 230, 230);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -89,6 +89,7 @@ article{
 }
 
 #FLL{
+    background: rgb(250, 250, 250);
     grid-row-start: 3;
     grid-column-start: 2;
     grid-column-end: span 2;
@@ -100,6 +101,7 @@ article{
 }
 
 #FRC{
+    background: rgb(250, 250, 250);
     grid-row-start: 5;
     grid-column-start: 2;
     grid-column-end: span 2;
