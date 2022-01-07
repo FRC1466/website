@@ -1,9 +1,4 @@
 // footer.js: adds the footer to every page
-/*
-Just adds links to all the socials
-Still needs to look nice and all that
-There might be more socials to link to as well 
- */
 
 var footer = document.createElement('footer');
 
@@ -20,6 +15,18 @@ instaLink.setAttribute('href', 'https://www.instagram.com/webb_robotics/');
 var instaImg = document.createElement('img');
 instaImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomiQoY3ASxZYDNQnCBmmBBjCjmHWRYAdqnw&usqp=CAU');
 instaLink.appendChild(instaImg);
+
+var twitLink = document.createElement('a');
+twitLink.setAttribute('href', 'https://twitter.com/webb1466');
+var twitImg = document.createElement('img');
+twitImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaEviorrl4ifwtcVO3-Eoe4EkLhJ-4wCktuA&usqp=CAU');
+twitLink.appendChild(twitImg);
+
+var ytLink = document.createElement('a');
+ytLink.setAttribute('href', 'https://www.youtube.com/channel/UCFfOXEsL3QqyypXxH4HnG4g');
+var ytImg = document.createElement('img');
+ytImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZBlUcDMZAjq7GsAuIfR7a5maRTekRrcXzQ&usqp=CAU');
+ytLink.appendChild(ytImg);
 
 var gitLink = document.createElement('a');
 gitLink.setAttribute('href', 'https://github.com/FRC1466');
@@ -40,8 +47,11 @@ frcImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9
 frcLink.appendChild(frcImg);
 
 footer.appendChild(fbLink);
+footer.appendChild(instaLink);
+footer.appendChild(twitLink);
+footer.appendChild(ytLink);
+footer.appendChild(gitLink);
 footer.appendChild(swLink);
 footer.appendChild(frcLink);
-footer.appendChild(gitLink);
 
 document.getElementsByTagName('body')[0].appendChild(footer);
