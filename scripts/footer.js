@@ -46,6 +46,7 @@ var frcImg = document.createElement('img');
 frcImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNanFx4a_pl55qEqZtRCF-RN5hOGZgf2FnhA&usqp=CAU')
 frcLink.appendChild(frcImg);
 
+
 footer.appendChild(fbLink);
 footer.appendChild(instaLink);
 footer.appendChild(twitLink);
