@@ -4,6 +4,8 @@
     --header-background-secondary-hover: #489b3d;
 }
 
+/*main*/
+
 body{
     margin: 0px;
     padding: 0px;
@@ -30,6 +32,7 @@ header{
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
+    height: 12vh;
 }
 
 #title img{
@@ -45,7 +48,7 @@ header{
 }
 
 nav{
-    height: 50px;
+    height: 8vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -133,4 +136,10 @@ footer {
 footer img{
     height: 50px; 
     padding: 10px;
+}
+
+/*about FIRST*/
+.about-wrapper {
+    min-height: 78vh;
+    height: auto;
 }
