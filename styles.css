@@ -6,11 +6,15 @@ body{
     
 }
 
+a {
+    text-decoration: none;
+}
+
 header{
     grid-column-start: 1;
     grid-column-end: span 3;
     margin: 0px;
-    background: rgb(55, 185, 90);
+    background: #008151;
     display: flex;
     flex-direction: column;
 }
@@ -31,6 +35,7 @@ header{
     font-size: 40px;
     margin-top: auto;
     margin-bottom: auto;
+    color: rgb(255, 255, 255);
 }
 
 nav{
@@ -47,6 +52,7 @@ nav{
 
 .navContainer a{
     margin: auto;
+    color: rgb(255, 255, 255);
 }
 
 article{
