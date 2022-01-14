@@ -18,6 +18,12 @@ a {
     text-decoration: none;
 }
 
+.content-wrapper {
+    min-height: 76vh;
+    height: auto;
+    padding: 2vh 2vw 2vh 2vw; 
+}
+
 header{
     grid-column-start: 1;
     grid-column-end: span 3;
@@ -139,16 +145,17 @@ footer img{
 }
 
 /*about FIRST*/
-.about-wrapper {
-    min-height: 78vh;
-    height: auto;
-    padding: 0vh 2vw 0vh 2vw; 
-}
 
 .first-info-title {
     
 }
 
 .first-info-body {
+    
+}
+
+/*upcoming-events*/
+
+.events-title {
     
 }
