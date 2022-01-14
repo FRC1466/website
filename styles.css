@@ -1,7 +1,10 @@
 :root {
-    --header-background-main: #008151;
-    --header-background-secondary: #73c868;
+    --header-background-main: #068e4a;
+    --header-background-secondary: #49a23e;
     --header-background-secondary-hover: #489b3d;
+    --title-font-color: #fff;
+    --nav-font-color: #fff;
+    --link-hover: #e5e6eb;
 }
 
 /*main*/
@@ -14,11 +17,14 @@ body{
     margin: 0px;
     padding: 0px;
     height: auto;
-    
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover) !important;
 }
 
 .content-wrapper {
@@ -53,7 +59,7 @@ header{
     font-size: 40px;
     margin-top: auto;
     margin-bottom: auto;
-    color: rgb(255, 255, 255);
+    color: var(--title-font-color);
 }
 
 nav{
@@ -74,7 +80,7 @@ nav{
 
 .navContainer a{
     margin: auto;
-    color: rgb(255, 255, 255);
+    color: var(--nav-font-color);
 }
 
 article{
