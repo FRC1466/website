@@ -1,3 +1,9 @@
+:root {
+    --header-background-main: #008151;
+    --header-background-secondary: #73c868;
+    --header-background-secondary-hover: #489b3d;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -14,7 +20,7 @@ header{
     grid-column-start: 1;
     grid-column-end: span 3;
     margin: 0px;
-    background: #008151;
+    background: var(--header-background-main);
     display: flex;
     flex-direction: column;
 }
@@ -45,9 +51,13 @@ nav{
 }
 
 .navContainer{
-    background: rgb(115, 200, 104);
+    background: var(--header-background-secondary);
     width: 100%;
     display: flex;
+}
+
+.navContainer:hover{
+    background: var(--header-background-secondary-hover);
 }
 
 .navContainer a{
