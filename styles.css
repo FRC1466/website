@@ -142,4 +142,13 @@ footer img{
 .about-wrapper {
     min-height: 78vh;
     height: auto;
+    padding: 0vh 2vw 0vh 2vw; 
+}
+
+.first-info-title {
+    
+}
+
+.first-info-body {
+    
 }
