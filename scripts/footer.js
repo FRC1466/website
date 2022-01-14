@@ -8,44 +8,50 @@ var fbLink = document.createElement('a');
 fbLink.setAttribute('href', 'https://www.facebook.com/FIRST1466/');
 var fbImg = document.createElement('img');
 fbImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMIOBhCbudV3rygP1hfmMT8pTJswrj6E65Q&usqp=CAU');
+fbImg.style.cssText += 'border-radius:30px';
 fbLink.appendChild(fbImg);
 
 var instaLink = document.createElement('a');
 instaLink.setAttribute('href', 'https://www.instagram.com/webb_robotics/');
 var instaImg = document.createElement('img');
 instaImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRomiQoY3ASxZYDNQnCBmmBBjCjmHWRYAdqnw&usqp=CAU');
+instaImg.style.cssText += 'border-radius:30px';
 instaLink.appendChild(instaImg);
 
 var twitLink = document.createElement('a');
 twitLink.setAttribute('href', 'https://twitter.com/webb1466');
 var twitImg = document.createElement('img');
 twitImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaEviorrl4ifwtcVO3-Eoe4EkLhJ-4wCktuA&usqp=CAU');
+twitImg.style.cssText += 'border-radius:30px';
 twitLink.appendChild(twitImg);
 
 var ytLink = document.createElement('a');
 ytLink.setAttribute('href', 'https://www.youtube.com/channel/UCFfOXEsL3QqyypXxH4HnG4g');
 var ytImg = document.createElement('img');
 ytImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZBlUcDMZAjq7GsAuIfR7a5maRTekRrcXzQ&usqp=CAU');
+ytImg.style.cssText += 'border-radius:30px';
 ytLink.appendChild(ytImg);
 
 var gitLink = document.createElement('a');
 gitLink.setAttribute('href', 'https://github.com/FRC1466');
 var gtImg = document.createElement('img');
 gtImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXpUiwviXomWkjsDAmGWyTp3Qp_O4ULEBYtw&usqp=CAU');
+gtImg.style.cssText += 'border-radius:30px';
 gitLink.appendChild(gtImg);
 
 var swLink = document.createElement('a');
 swLink.setAttribute('href', 'https://www.webbschool.org');
 var swImg = document.createElement('img');
-swImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp650nH8-Igx3zizSWhCe_yR0sKkuNE0pgxQ&usqp=CAU')
+swImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp650nH8-Igx3zizSWhCe_yR0sKkuNE0pgxQ&usqp=CAU');
+swImg.style.cssText += 'border-radius:30px';
 swLink.appendChild(swImg);
 
 var frcLink = document.createElement('a');
 frcLink.setAttribute('href', 'https://www.firstinspires.org/robotics/frc');
 var frcImg = document.createElement('img');
-frcImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNanFx4a_pl55qEqZtRCF-RN5hOGZgf2FnhA&usqp=CAU')
+frcImg.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNanFx4a_pl55qEqZtRCF-RN5hOGZgf2FnhA&usqp=CAU');
+frcImg.style.cssText += 'border-radius:30px';
 frcLink.appendChild(frcImg);
-
 
 footer.appendChild(fbLink);
 footer.appendChild(instaLink);
