@@ -123,6 +123,12 @@ article{
     grid-column-end: span 2;
 }
 
+footer {
+    grid-row-start: -1; 
+    grid-column-end: span 3; 
+    background: rgb(100,100,100);
+}
+
 
 footer img{
     height: 50px; 
