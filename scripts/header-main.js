@@ -3,7 +3,7 @@ let header = document.createElement('header');
 let indexDiv = document.createElement('div')
 indexDiv.setAttribute('id', 'title');
 let indexImg = document.createElement('img');
-indexImg.setAttribute('src', 'media/webblogo.jpg')
+indexImg.setAttribute('src', 'media/webblogo.png')
 indexDiv.appendChild(indexImg);
 let indexLink = document.createElement('a')
 indexLink.appendChild(document.createTextNode('Webb Robotics'));
