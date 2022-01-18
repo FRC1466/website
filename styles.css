@@ -51,8 +51,9 @@ header{
 }
 
 #title img{
-    height: 70px;
-    margin: 10px;
+    height: 100%;
+    margin-left: 1rem;
+    
 }
 
 #title a{
@@ -141,16 +142,32 @@ article{
     grid-column-end: span 2;
 }
 
-footer {
-    grid-row-start: -1; 
-    grid-column-end: span 3; 
+/* footer */
+
+footer { 
     background: rgb(100,100,100);
 }
 
+.logo-wrap {
+    display:inline-grid;
+}
 
-footer img{
-    height: 50px; 
-    padding: 10px;
+.logo-footer {
+    grid-row-start: 1;
+    height: 3rem;
+    padding: 0.5rem;
+    filter: invert();
+}
+
+footer img, .logo-wrap a {
+    height: inherit; 
+}
+
+#frc-logo-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    filter: none;
+    height:2.5rem;
 }
 
 /*about FIRST*/
