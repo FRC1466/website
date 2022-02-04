@@ -58,9 +58,12 @@ header{
 
 #title a{
     font-size: 40px;
-    margin-top: auto;
-    margin-bottom: auto;
+    width:25%;
     color: var(--title-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:2%;
 }
 
 nav{
@@ -80,7 +83,11 @@ nav{
 }
 
 .navContainer a{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width:100%;
     color: var(--nav-font-color);
 }
 
@@ -91,56 +98,6 @@ article{
     justify-content: space-between;
 }
 
-.pContainer{
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-grow: 2;
-    display: flex;
-    justify-content: center;
-}
-
-.pContainer p{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.aContainer{
-    margin-left: auto;
-    margin-right: auto;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.aContainer a{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#general{
-    grid-row-start: 2;
-    grid-column-end: span 2;
-}
-
-#FLL{
-    background: rgb(250, 250, 250);
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-column-end: span 2;
-}
-
-#FTC{
-    grid-row-start: 4;
-    grid-column-end: span 2;
-}
-
-#FRC{
-    background: rgb(250, 250, 250);
-    grid-row-start: 5;
-    grid-column-start: 2;
-    grid-column-end: span 2;
-}
 
 /* footer */
 
@@ -150,6 +107,7 @@ footer {
 
 .logo-wrap {
     display:inline-grid;
+    width: 1px;
 }
 
 .logo-footer {
@@ -169,6 +127,77 @@ footer img, .logo-wrap a {
     filter: none;
     height:2.5rem;
 }
+
+/* INDEX */
+#FLL{
+    background: rgb(250, 250, 250);
+    width:50vw;
+}
+
+#FTC{
+    width:50%;
+}
+
+#FRC{
+    background: rgb(250, 250, 250);
+    width:50%;
+}
+
+#general{
+    width:50%;
+    display:inline-grid;
+    grid-column:2;
+}
+
+#general-item {
+    display:grid;
+}
+
+#index-wrapper {
+    display:grid;
+    width:100vw;
+    height:100vh;
+}
+
+.index-item {
+    display:inline-grid;
+}
+
+.index-img-wrap {
+    width:50vw;
+    height:1px;
+}
+
+.pContainer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.pContainer p{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 8%;
+    padding-left:8%;
+}
+
+.aContainer{
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.aContainer a{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
 
 /*about FIRST*/
 
