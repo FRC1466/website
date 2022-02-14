@@ -176,16 +176,27 @@ article{
     grid-column: 2;
 }
 
+.FLL-img-wrap img, .FTC-img-wrap img, .FRC-img-wrap img {
+    height:34rem;
+}
+
+.index-img-wrap img {
+    width: 50vw;
+}
+
 .index-img-wrap, .FTC-img-wrap, .FLL-img-wrap, .FRC-img-wrap {
-    width:50vw;
     height:auto;
     display: inline-grid;
     grid-row: 1;
     overflow:hidden;
 }
 
-.index-img-wrap img, .FTC-img-wrap img, .FLL-img-wrap img, .FRC-img-wrap img {
-    transform: scale(2);
+.FTC-img-wrap, .FLL-img-wrap, .FRC-img-wrap {
+    width:65vw;
+}
+
+.index-img-wrap {
+    width: 50vw;
 }
 
 .FTC-item {

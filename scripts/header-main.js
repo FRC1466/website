@@ -12,7 +12,7 @@ indexDiv.appendChild(indexLink);
 header.appendChild(indexDiv);
 
 pages_list = [null, 'first.html', 'calendar.html', 'photo-gallery.html', null];
-text_list = ['About Us', 'FIRST Robotics', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
+text_list = ['About', 'FIRST Robotics', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
 
 let headerNav = document.createElement('nav');
 
