@@ -47,27 +47,46 @@ header{
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    height: 12vh;
+    height: 5rem;
 }
 
 #title img{
     height: 100%;
     margin-left: 1rem;
+    display:inline-flex;
     
 }
 
 #title a{
     font-size: 40px;
-    width:25%;
+    width:30rem;
     color: var(--title-font-color);
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     padding-left:2%;
 }
 
+.team-header p {
+    color: var(--title-font-color);
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right:2rem;
+}
+
+.team-header {
+    display:inline-flex;
+    align-self:right;
+}
+
+.header-container {
+    display:flex;
+    justify-content: space-between;
+}
+
 nav{
-    height: 8vh;
+    height: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
