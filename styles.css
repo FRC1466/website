@@ -89,6 +89,31 @@ nav{
     height: 3rem;
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.dropdown-button {
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    display: none;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: inline-flex !important;
+}
+
+.navContainer:hover .dropdown-content {
+    display: flex;
+    width: inherit;
 }
 
 .navContainer{
