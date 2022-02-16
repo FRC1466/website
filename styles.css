@@ -89,7 +89,7 @@ nav{
     height: 3rem;
     display: flex;
     justify-content: space-evenly;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .dropdown-button {
@@ -101,25 +101,33 @@ nav{
 }
 
 .dropdown-content {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
     z-index: 1;
+    width: 100%;
+    background: var(--header-background-secondary-hover);
 }
 
 .dropdown-content a {
     display: inline-flex !important;
+    width: 100% !important;
+    flex-flow: column wrap;
+    
+    
 }
 
 .navContainer:hover .dropdown-content {
-    display: flex;
-    width: inherit;
+    display: inline-flex;
 }
 
 .navContainer{
     background: var(--header-background-secondary);
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
+    overflow: visible;
+
 }
 
 .navContainer:hover{
@@ -127,12 +135,13 @@ nav{
 }
 
 .navContainer a{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width:100%;
+    width:inherit;
     color: var(--nav-font-color);
+    height: 3rem;
 }
 
 
@@ -198,6 +207,7 @@ article{
     width:100vw;
     height:auto;
     grid-gap:5rem;
+    padding-top: 4%;
 
 }
 
