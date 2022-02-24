@@ -112,8 +112,38 @@ nav{
 .dropdown-content a {
     display: inline-flex !important;
     width: 100% !important;
-    flex-flow: column wrap;
-    
+    flex-flow: column wrap;   
+}
+
+.dropdown-link-container {
+    display: flex !important;
+    width: 100% !important;
+    flex-flow: row nowrap;
+    overflow: visible;
+    position:relative;
+}
+
+.dropdown-nested-container {
+    background: var(--header-background-secondary-hover);
+    height: 0rem;
+    display: none;
+    position:relative;
+    overflow: visible;
+}
+
+.nested-link-container {
+   display: flex;
+   width: 1vw;
+   height: 3rem;
+   position:absolute;
+   background: var(--header-background-secondary-hover);
+   flex-flow: row wrap;
+   color: black !important;
+}
+
+.dropdown-link-container:hover .dropdown-nested-container {
+    display: flex !important;
+    flex-flow: row wrap;
     
 }
 

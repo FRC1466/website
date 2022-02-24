@@ -27,14 +27,20 @@ headerWrap.appendChild(indexWrap);
 headerWrap.appendChild(indexTeam);
 header.appendChild(headerWrap);
 
-pages_list = ['about-team.html', 'first-robotics.html', 'calendar.html', 'photo-gallery.html', 'sponsor-info.html'];
-text_list = ['About', 'FIRST Robotics', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
-dropdown_list = [2, 1, 0, 1, 0];
-dropdown_content = ['test1.html', 'test2.html', 'test3.html', 'test4.html'];
-dropdown_content_name = ['test1', 'test2', 'test3', 'test4', 'test5'];
+pages_list = ['#', '#', 'calendar.html', '#', 'sponsor-info.html'];
+text_list = ['About', 'Team Pages', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
+
+dropdown_list = [2, 3, 0, 3, 0];
+dropdown_content = ['first-robotics.html', 'about-team.html', 'test3.html', 'test4.html'];
+dropdown_content_name = [0, 'Our Team', 'test3', 'test4', 'test5'];
+
+nested_dropdown_list = [2];
+nested_dropdown_content = ['nest1.html', 'nest2.html'];
+nested_dropdown_name = ['nest1', 'nest2'];
 
 let headerNav = document.createElement('nav');
 let dropdownIndex = 0;
+let nestedIndex = 0;
 
 for (let i = 0; i < text_list.length; i++)
 {
@@ -43,7 +49,7 @@ for (let i = 0; i < text_list.length; i++)
     let link = document.createElement('a');
     link.appendChild(document.createTextNode(text_list[i]));
     linkDiv.appendChild(link);
-    if(dropdown_list[i])
+    if(dropdown_list[i]) //initialize dropdown
     {    
         let dropdownButton = document.createElement('button');
         dropdownButton.classList.add('dropdown-button');
@@ -56,17 +62,50 @@ for (let i = 0; i < text_list.length; i++)
         dropdownButtonContent.classList.add('dropdown-content');
         linkDiv.appendChild(dropdownButtonContent);
         
-        
-
-        for (let j = 0; j < dropdown_list[i]; j++)
+        console.log(dropdown_content_name[dropdownIndex]);
+        for (let j = 0; j < dropdown_list[i]; j++) //generate dropdown links
+        {
+            // console.log(dropdownIndex, j, i, dropdown_list[i], dropdown_content[dropdownIndex]);
+            let dropdownLinkContainer = document.createElement('div');
+            dropdownLinkContainer.classList.add('dropdown-link-container');
+            let dropdownLink = document.createElement('a');
+            dropdownLink.innerHTML = dropdown_content_name[dropdownIndex];
+            
+            if(!dropdown_content_name[dropdownIndex]) 
             {
-                // console.log(dropdownIndex, j, i, dropdown_list[i], dropdown_content[dropdownIndex]);
-                let dropdownLink = document.createElement('a');
-                dropdownLink.setAttribute('href', dropdown_content[dropdownIndex]);
-                dropdownLink.innerHTML = dropdown_content_name[dropdownIndex];
-                dropdownButtonContent.appendChild(dropdownLink);
-                dropdownIndex++;
+                let nestedDropdown = document.createElement('div');
+                nestedDropdown.classList.add('dropdown-nested-container');
+                
+                for (let k = 0; k < nested_dropdown_list[dropdownIndex]; k++)
+                {
+                    let nestedLinkContainer = document.createElement('div');
+                    nestedLinkContainer.classList.add('nested-link-container');
+                    let nestedLink = document.createElement('a');
+                    nestedLink.innerHTML = nested_dropdown_name[nestedIndex];
+                    nestedLink.setAttribute('href', nested_dropdown_content[nestedIndex]);
+
+                    console.log('hi');
+
+                    nestedLinkContainer.appendChild(nestedLink);
+                    nestedDropdown.appendChild(nestedLinkContainer);
+                    nestedIndex++;
+                }
+                
+                dropdownLinkContainer.appendChild(dropdownLink);
+                dropdownLinkContainer.appendChild(nestedDropdown);
             }
+            else
+            {
+                dropdownLink.setAttribute('href', dropdown_content[dropdownIndex]);
+                dropdownLinkContainer.appendChild(dropdownLink);
+            }
+
+            
+            
+            
+            dropdownButtonContent.appendChild(dropdownLinkContainer);
+            dropdownIndex++;
+        }
 
     }
     else 
