@@ -34,9 +34,9 @@ dropdown_list = [2, 3, 0, 3, 0];
 dropdown_content = ['first-robotics.html', 'about-team.html', 'test3.html', 'test4.html'];
 dropdown_content_name = [0, 'Our Team', 'test3', 'test4', 'test5'];
 
-nested_dropdown_list = [2];
-nested_dropdown_content = ['nest1.html', 'nest2.html'];
-nested_dropdown_name = ['nest1', 'nest2'];
+nested_dropdown_list = [3];
+nested_dropdown_content = ['nest1.html', 'nest2.html', 'nest3.html'];
+nested_dropdown_name = ['nest1', 'nest2', 'nest3'];
 
 let headerNav = document.createElement('nav');
 let dropdownIndex = 0;
@@ -58,7 +58,7 @@ for (let i = 0; i < text_list.length; i++)
         dropdownButton.appendChild(dropdownButtonInner);
         linkDiv.appendChild(dropdownButton);
 
-        let dropdownButtonContent = document.createElement('div');
+        let dropdownButtonContent = document.createElement('ul');
         dropdownButtonContent.classList.add('dropdown-content');
         linkDiv.appendChild(dropdownButtonContent);
         
@@ -66,19 +66,19 @@ for (let i = 0; i < text_list.length; i++)
         for (let j = 0; j < dropdown_list[i]; j++) //generate dropdown links
         {
             // console.log(dropdownIndex, j, i, dropdown_list[i], dropdown_content[dropdownIndex]);
-            let dropdownLinkContainer = document.createElement('div');
+            let dropdownLinkContainer = document.createElement('li');
             dropdownLinkContainer.classList.add('dropdown-link-container');
             let dropdownLink = document.createElement('a');
             dropdownLink.innerHTML = dropdown_content_name[dropdownIndex];
             
             if(!dropdown_content_name[dropdownIndex]) 
             {
-                let nestedDropdown = document.createElement('div');
+                let nestedDropdown = document.createElement('ul');
                 nestedDropdown.classList.add('dropdown-nested-container');
                 
                 for (let k = 0; k < nested_dropdown_list[dropdownIndex]; k++)
                 {
-                    let nestedLinkContainer = document.createElement('div');
+                    let nestedLinkContainer = document.createElement('li');
                     nestedLinkContainer.classList.add('nested-link-container');
                     let nestedLink = document.createElement('a');
                     nestedLink.innerHTML = nested_dropdown_name[nestedIndex];
@@ -117,3 +117,7 @@ for (let i = 0; i < text_list.length; i++)
 
 header.appendChild(headerNav);
 document.getElementsByTagName('body')[0].appendChild(header);
+
+// CSS tweaks
+
+document.getElementsByClassName('.dropdown-nested-container').style = 'color: red';

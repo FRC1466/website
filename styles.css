@@ -102,11 +102,13 @@ nav{
 
 .dropdown-content {
     display: none;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     position: relative;
     z-index: 1;
     width: 100%;
     background: var(--header-background-secondary-hover);
+    padding: 0;
+    margin: 0;
 }
 
 .dropdown-content a {
@@ -118,37 +120,53 @@ nav{
 .dropdown-link-container {
     display: flex !important;
     width: 100% !important;
-    flex-flow: row nowrap;
+    flex-flow: column wrap;
     overflow: visible;
-    position:relative;
+    position: relative;
+    z-index:1;
 }
 
 .dropdown-nested-container {
     background: var(--header-background-secondary-hover);
-    height: 0rem;
     display: none;
     position:relative;
+    flex-flow: column wrap !important;
     overflow: visible;
-}
+    width:87%; /* Small fix for nested, TODO*/
+    z-index: 1;
+    left:83%;
+} 
 
 .nested-link-container {
-   display: flex;
-   width: 1vw;
+   display: flex !important;
+   width: 100% !important;
    height: 3rem;
+   flex-flow: column wrap;
    position:absolute;
+   overflow: visible;
    background: var(--header-background-secondary-hover);
-   flex-flow: row wrap;
    color: black !important;
 }
 
+.nested-link-container:nth-child(1) {
+    bottom: 100%
+}
+
+.nested-link-container:nth-child(3) {
+    bottom: 200%
+}
+
+
+
 .dropdown-link-container:hover .dropdown-nested-container {
-    display: flex !important;
-    flex-flow: row wrap;
+    display: inline-flex !important;
+    flex-flow: wrap row !important;
+    
     
 }
 
 .navContainer:hover .dropdown-content {
-    display: inline-flex;
+    display: flex;
 }
 
 .navContainer{
