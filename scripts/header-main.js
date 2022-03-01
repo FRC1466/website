@@ -31,8 +31,12 @@ pages_list = ['#', '#', 'calendar.html', '#', 'sponsor-info.html'];
 text_list = ['About', 'Team Pages', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
 
 dropdown_list = [2, 3, 0, 3, 0];
-dropdown_content = ['first-robotics.html', 'about-team.html', 'test3.html', 'test4.html'];
-dropdown_content_name = [0, 'Our Team', 'test3', 'test4', 'test5'];
+dropdown_content = ['first-robotics.html', 'about-team.html', 'test3.html', 'test4.html', 'test5.html', 'FRC-photo-gallery.html', 'FTC-photo-gallery.html', 'FLL-photo-gallery.html'];
+dropdown_content_name = [0, 'Our Team', 'test3', 'test4', 'test5', 'FRC', 'FTC', 'FLL'];
+
+if (dropdown_content.length != dropdown_content_name.length) {
+    console.error("Header dropdown names and pages are misaligned. Length of arrays not equal.")
+}
 
 nested_dropdown_list = [3];
 nested_dropdown_content = ['nest1.html', 'nest2.html', 'nest3.html'];
@@ -62,7 +66,7 @@ for (let i = 0; i < text_list.length; i++)
         dropdownButtonContent.classList.add('dropdown-content');
         linkDiv.appendChild(dropdownButtonContent);
         
-        console.log(dropdown_content_name[dropdownIndex]);
+        // console.log(dropdown_content_name[dropdownIndex]);
         for (let j = 0; j < dropdown_list[i]; j++) //generate dropdown links
         {
             // console.log(dropdownIndex, j, i, dropdown_list[i], dropdown_content[dropdownIndex]);
@@ -84,7 +88,7 @@ for (let i = 0; i < text_list.length; i++)
                     nestedLink.innerHTML = nested_dropdown_name[nestedIndex];
                     nestedLink.setAttribute('href', nested_dropdown_content[nestedIndex]);
 
-                    console.log('hi');
+                    // console.log('hi');
 
                     nestedLinkContainer.appendChild(nestedLink);
                     nestedDropdown.appendChild(nestedLinkContainer);
