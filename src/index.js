@@ -6,16 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import DynamicHeader from './js/dynamic-header';
 
-
-var loadScript = function(src) {
-  var tag = document.createElement('script');
-  tag.async = false;
-  tag.src = src;
-  document.getElementsByClassName('App')[0].prepend(tag);
-}
-
-
-
 ReactDOM.render(
   <BrowserRouter>
     <App />
