@@ -98,7 +98,7 @@ header{
 
 #title a{
   font-size: 40px;
-  width:30rem;
+  width:20rem;
   color: var(--title-font-color);
   display: inline-flex;
   flex-direction: column;

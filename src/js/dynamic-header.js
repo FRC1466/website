@@ -1,4 +1,4 @@
-// import webblogo from "./media/webblogo.png";
+import webblogo from '../media/webblogo.png';
 
 function DynamicHeader() {
     let header = document.createElement('header');
@@ -9,11 +9,11 @@ function DynamicHeader() {
     indexDiv.setAttribute('id', 'title');
     indexWrap.appendChild(indexDiv);
     let indexImg = document.createElement('img');
-    // indexImg.setAttribute('src', webblogo);
+    indexImg.setAttribute('src', webblogo);
     indexDiv.appendChild(indexImg);
     let indexLink = document.createElement('a');
     indexLink.appendChild(document.createTextNode('Webb Robotics'));
-    indexLink.setAttribute('href', 'index.html');
+    indexLink.setAttribute('href', '/');
 
     let headerWrap = document.createElement('div');
     headerWrap.setAttribute('class', 'header-container');
@@ -30,18 +30,19 @@ function DynamicHeader() {
     headerWrap.appendChild(indexTeam);
     header.appendChild(headerWrap);
 
-    const pages_list = ['#', '#', 'calendar.html', '#', 'sponsor-info.html'];
-    const text_list = ['About', 'Team Pages', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
+    const pages_list = ['#', '#', '#'];
+    // const text_list = ['About', 'Team Pages', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
+    const text_list = ['FRC', 'FTC', 'FLL'];
 
-    const dropdown_list = [2, 3, 0, 3, 0];
-    const dropdown_content = ['first-robotics.html', 'about-team.html', 'test3.html', 'test4.html', 'test5.html', 'FRC-photo-gallery.html', 'FTC-photo-gallery.html', 'FLL-photo-gallery.html'];
-    const dropdown_content_name = [0, 'Our Team', 'test3', 'test4', 'test5', 'FRC', 'FTC', 'FLL'];
+    const dropdown_list = [5, 5, 5];
+    const dropdown_content = ['/FRC/About', '/FRC/Team', '/FRC/Events', '/FRC/Photos', '/FRC/Sponsors', '/FTC/About', '/FTC/Team', '/FTC/Events', '/FTC/Photos', '/FTC/Sponsors', '/FLL/About', '/FLL/Team', '/FLL/Events', '/FLL/Photos', '/FLL/Sponsors'];
+    const dropdown_content_name = ['About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors'];
 
-    if (dropdown_content.length != dropdown_content_name.length) {
+    if (dropdown_content.length !== dropdown_content_name.length) {
         console.error("Header dropdown names and pages are misaligned. Length of arrays not equal.")
     }
 
-    const nested_dropdown_list = [3];
+    const nested_dropdown_list = [0];
     const nested_dropdown_content = ['nest1.html', 'nest2.html', 'nest3.html'];
     const nested_dropdown_name = ['nest1', 'nest2', 'nest3'];
 

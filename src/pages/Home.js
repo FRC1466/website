@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './styles.css';
-import FLL_t from './media/stock/FLL_tournament.jpg'
-import FIRST_l from './media/stock/FIRST-light.png'
-import FTC_t from './media/stock/FTC-tournament.jpg'
-import FRC_t from './media/stock/FRC-tournament.jpg'
+import logo from '../logo.svg';
+import '../styles.css';
+import FLL_t from '../media/stock/FLL_tournament.jpg'
+import FIRST_l from '../media/stock/FIRST-light.png'
+import FTC_t from '../media/stock/FTC-tournament.jpg'
+import FRC_t from '../media/stock/FRC-tournament.jpg'
 import { Link } from 'react-router-dom'
 
 
