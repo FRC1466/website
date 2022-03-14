@@ -26,7 +26,7 @@ function Home()
                     <p>is a series of engineering challenges posed to participants grades PreK - 12. These challenges are designed to encourage students to participate in STEM fields in a fun and engaging way. The Webb Robotics team has been competing since 2004 and is now one of the oldest active teams in the region.</p>
                 </div>
                 <div className="aContainer">
-                    <a>Learn more here.</a>
+                    <Link to={'./FIRST'}>Learn more here.</Link>
                 </div>
             </article>
         </div>

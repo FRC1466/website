@@ -1,9 +1,42 @@
 import './styles.css';
-
+import WebbLogo from './media/webblogo.png'
+import { Link } from 'react-router-dom'
 
 
 function Header()
 {   
+    return(
+        <header>
+            <nav>
+            <div className='header-container'>
+                <div className='title-container'>
+                    <div id='title'>
+                        <img src={WebbLogo}></img>
+                    </div>
+                    <Link to='./'>
+                        Webb Robotics
+                        <div className='team-header'>
+                            <p>1466</p>
+                        </div>
+                    </Link>
+                </div>
+            </div>
+            <div className='navContainer'>
+                <Link to='/About'>About Our Team</Link>
+            </div>
+            <div className='navContainer'>
+                <Link to='/Calendar'>Upcoming Events</Link>
+            </div>
+            <div className='navContainer'>
+                <Link to='/Sponsors'>Sponsor Info</Link>
+            </div>
+            <div className='navContainer'>
+                <Link to='/Training'>Training Modules</Link>
+            </div>
+            </nav>
+        </header>
+    );
+    /*
     let header = document.createElement('header');
 
     let indexWrap = document.createElement('div');
@@ -135,6 +168,7 @@ function Header()
     return(
         header
     );
+    */
 }
 
 export default Header;

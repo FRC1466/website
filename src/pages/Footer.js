@@ -41,6 +41,7 @@ function Footer(){
             </div>
             <div id='frc-logo-footer' className='logo-footer'>
                 <a href='https://www.firstinspires.org/robotics/frc'>
+                    Hyello
                 </a>
             </div>
         </div>

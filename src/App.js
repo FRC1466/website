@@ -1,8 +1,8 @@
 
 import logo from './logo.svg';
 import './styles.css';
-import Header from './Header.js';
-import Footer from './Footer.js';
+import Header from './pages/Header.js';
+import Footer from './pages/Footer.js';
 import Main from './Main.js';
 
 function App() {
@@ -10,11 +10,10 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <Footer />
+      <Footer /> 
     </div>
   );
 }
 
-//Hello?
 
 export default App;
