@@ -24,7 +24,7 @@ function DynamicHeader() {
     indexTeam.setAttribute('class', 'team-header');
     let indexTeamNum = document.createElement('p');
     indexTeam.appendChild(indexTeamNum);
-    indexTeamNum.appendChild(document.createTextNode('1466'));
+    indexTeamNum.appendChild(document.createTextNode('FRC 1466, FTC 9934, FLL 5358/5360'));
     indexDiv.appendChild(indexLink);
     headerWrap.appendChild(indexWrap);
     headerWrap.appendChild(indexTeam);
@@ -34,9 +34,9 @@ function DynamicHeader() {
     // const text_list = ['About', 'Team Pages', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
     const text_list = ['FRC', 'FTC', 'FLL'];
 
-    const dropdown_list = [5, 5, 5];
-    const dropdown_content = ['/FRC/About', '/FRC/Team', '/FRC/Events', '/FRC/Photos', '/FRC/Sponsors', '/FTC/About', '/FTC/Team', '/FTC/Events', '/FTC/Photos', '/FTC/Sponsors', '/FLL/About', '/FLL/Team', '/FLL/Events', '/FLL/Photos', '/FLL/Sponsors'];
-    const dropdown_content_name = ['About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors'];
+    const dropdown_list = [8, 8, 8];
+    const dropdown_content = ['/FRC/About', '/FRC/Team', '/FRC/Events', '/FRC/Photos', '/FRC/Sponsors', '/FRC/Outreach', '/FRC/Awards', '/FRC/Robots', '/FTC/About', '/FTC/Team', '/FTC/Events', '/FTC/Photos', '/FTC/Sponsors', '/FTC/Outreach', '/FTC/Awards', '/FTC/Robots', '/FLL/About', '/FLL/Team', '/FLL/Events', '/FLL/Photos', '/FLL/Sponsors', '/FLL/Outreach', '/FLL/Awards', '/FLL/Robots'];
+    const dropdown_content_name = ['About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots'];
 
     if (dropdown_content.length !== dropdown_content_name.length) {
         console.error("Header dropdown names and pages are misaligned. Length of arrays not equal.")

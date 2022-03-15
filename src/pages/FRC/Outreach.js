@@ -1,10 +1,10 @@
 import '../../styles.css';
 
-function Team_FRC(){
+function FRC_Outreach(){
     return(
         <div className="FRC">
             <p> You got this </p>
         </div>
     );
 }
-export default Team_FRC;
+export default FRC_Outreach;

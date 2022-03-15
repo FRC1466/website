@@ -1,10 +1,10 @@
 import '../../styles.css';
 
-function Team_FRC(){
+function Rewards_FTC(){
     return(
-        <div className="FRC">
+        <div className="FTC">
             <p> You got this </p>
         </div>
     );
 }
-export default Team_FRC;
+export default Rewards_FTC;

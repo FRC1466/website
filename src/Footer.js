@@ -5,7 +5,7 @@ import TW from './media/socials/logo-twitter.svg'
 import YT from './media/socials/logo-youtube.svg'
 import GT from './media/socials/logo-github.svg'
 import Webb from './media/socials/logo-webb.svg'
-import FIRST_LOGO from './media/socials/logo-first.svg'
+//import FIRST_LOGO from './media/socials/logo-first.svg'
 
 function Footer(){
     return(

@@ -1,10 +1,10 @@
 import '../../styles.css';
 
-function Team_FRC(){
+function Robots_FTC(){
     return(
-        <div className="FRC">
+        <div className="FTC">
             <p> You got this </p>
         </div>
     );
 }
-export default Team_FRC;
+export default Robots_FTC;
