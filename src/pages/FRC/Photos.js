@@ -2,8 +2,10 @@ import '../../styles.css';
 
 function Photos_FRC(){
     return(
-        <div className="FLL">
-            <p> You got this </p>
+        <div className="FRC">
+            <strong className='article-title'>FRC 1466 Photo Gallery</strong>
+
+            {/* JS Time (eventually)*/}
         </div>
     );
 }
