@@ -2,7 +2,7 @@ import '../../styles.css';
 
 function Team_FTC(){
     return(
-        <div className="FLL">
+        <div className="FTC">
             <p> You got this </p>
         </div>
     );

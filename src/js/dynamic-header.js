@@ -34,9 +34,9 @@ function DynamicHeader() {
     // const text_list = ['About', 'Team Pages', 'Upcoming Events', 'Photo Gallery', 'Sponsors'];
     const text_list = ['FRC', 'FTC', 'FLL'];
 
-    const dropdown_list = [8, 8, 8];
-    const dropdown_content = ['/FRC/About', '/FRC/Team', '/FRC/Events', '/FRC/Photos', '/FRC/Sponsors', '/FRC/Outreach', '/FRC/Awards', '/FRC/Robots', '/FTC/About', '/FTC/Team', '/FTC/Events', '/FTC/Photos', '/FTC/Sponsors', '/FTC/Outreach', '/FTC/Awards', '/FTC/Robots', '/FLL/About', '/FLL/Team', '/FLL/Events', '/FLL/Photos', '/FLL/Sponsors', '/FLL/Outreach', '/FLL/Awards', '/FLL/Robots'];
-    const dropdown_content_name = ['About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots'];
+    const dropdown_list = [9, 8, 8];
+    const dropdown_content = ['/FRC/About', '/FRC/Team', '/FRC/Events', '/FRC/Photos', '/FRC/Sponsors', '/FRC/Outreach', '/FRC/Awards', '/FRC/Robots', '/FRC/Training', '/FTC/About', '/FTC/Team', '/FTC/Events', '/FTC/Photos', '/FTC/Sponsors', '/FTC/Outreach', '/FTC/Awards', '/FTC/Robots', '/FLL/About', '/FLL/Team', '/FLL/Events', '/FLL/Photos', '/FLL/Sponsors', '/FLL/Outreach', '/FLL/Awards', '/FLL/Robots'];
+    const dropdown_content_name = ['About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'Training Modules', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots'];
 
     if (dropdown_content.length !== dropdown_content_name.length) {
         console.error("Header dropdown names and pages are misaligned. Length of arrays not equal.")
