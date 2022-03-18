@@ -3,7 +3,12 @@ import '../../styles.css';
 function FRC_Outreach(){
     return(
         <div className="FRC">
-            <p> You got this </p>
+            <strong>
+                Our FRC Team's Outreach
+            </strong>
+            <p>
+                Work in progress, will have some info here soon
+            </p>
         </div>
     );
 }

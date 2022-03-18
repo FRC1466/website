@@ -6,6 +6,9 @@ function Events_FRC(){
             <strong className='article-title'>FRC 1466 Calendar</strong>
 
             {/* Google Calendar go here */}
+            <p>
+                Work in progress, will have some info here soon
+            </p>
         </div>
     );
 }

@@ -6,6 +6,9 @@ function Photos_FRC(){
             <strong className='article-title'>FRC 1466 Photo Gallery</strong>
 
             {/* JS Time (eventually)*/}
+            <p>
+                Work in progress, will have some info here soon
+            </p>
         </div>
     );
 }
