@@ -132,18 +132,21 @@ header{
   justify-content: space-evenly;
   overflow: visible;
   display:inline-flex;
-  flex-grow:2;
+  flex-grow:3;
+  align-items:start;
 }
 
 .header-space-container {
   display: inline-flex;
-  flex-grow: 3;
+  flex-grow: 5;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--header-background-secondary);
+  width:100vw;
+  align-items:start;
 }
 
 .dropdown-button {
@@ -223,16 +226,15 @@ nav {
     display: flex;
 }
 
-.navContainer:hover {
-  flex-grow: 8;
-}
+
 
 .navContainer{
   background: var(--header-background-secondary);
-  width: 100%;
-  display: flex;
+  width: 0px;
+  display: inline-flex;
   flex-flow: row wrap;
   overflow: visible;
+  flex-grow: 1;
 
 }
 
@@ -245,7 +247,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width:inherit;
+  width: 100%;
   color: var(--nav-font-color);
   height: 3rem;
 }
