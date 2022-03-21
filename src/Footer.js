@@ -5,6 +5,7 @@ import TW from './media/socials/logo-twitter.svg'
 import YT from './media/socials/logo-youtube.svg'
 import GT from './media/socials/logo-github.svg'
 import Webb from './media/socials/logo-webb.svg'
+import FIRST from './media/socials/logo-first.svg'
 //import FIRST_LOGO from './media/socials/logo-first.svg'
 
 function Footer(){
@@ -28,6 +29,7 @@ function Footer(){
                 </div>
                 <div id='youtube-logo-footer' className='logo-footer'>
                     <a href='https://www.youtube.com/channel//UCFfOXEsL3QqyypXxH4HnG4g'>
+                        <img src={YT}></img>
                     </a>
                 </div>
                 <div id='github-logo-footer' className='logo-footer'>
@@ -42,6 +44,7 @@ function Footer(){
                 </div>
                 <div id='frc-logo-footer' className='logo-footer'>
                     <a href='https://www.firstinspires.org/robotics/frc'>
+                        <img src={FIRST}></img>
                     </a>
                 </div>
             </div>

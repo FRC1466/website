@@ -7,7 +7,9 @@ import Main from './Main.js';
 function App() {
   return (
     <div className="App"> 
-      <Main />
+      <div class="page-wrap">
+        <Main />
+      </div>
       <Footer /> 
     </div>
   );
