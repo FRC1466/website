@@ -38,6 +38,8 @@ function DynamicHeader() {
     const dropdown_content = ['/FRC/About', '/FRC/Team', '/FRC/Events', '/FRC/Photos', '/FRC/Sponsors', '/FRC/Outreach', '/FRC/Awards', '/FRC/Robots', '/FRC/Training', '/FTC/About', '/FTC/Team', '/FTC/Events', '/FTC/Photos', '/FTC/Sponsors', '/FTC/Outreach', '/FTC/Awards', '/FTC/Robots', '/FLL/About', '/FLL/Team', '/FLL/Events', '/FLL/Photos', '/FLL/Sponsors', '/FLL/Outreach', '/FLL/Awards', '/FLL/Robots'];
     const dropdown_content_name = ['About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'Training Modules', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots', 'About', 'Team Info', 'Upcoming Events', 'Photos', 'Sponsors', 'Outreach', 'Awards', 'Robots'];
 
+    // TODO: make the database not a clunky list
+
     if (dropdown_content.length !== dropdown_content_name.length) {
         console.error("Header dropdown names and pages are misaligned. Length of arrays not equal.")
     }
@@ -47,6 +49,12 @@ function DynamicHeader() {
     const nested_dropdown_name = ['nest1', 'nest2', 'nest3'];
 
     let headerNav = document.createElement('nav');
+    let headerNavContainer = document.createElement('div');
+    headerNavContainer.classList.add('header-nav-container');
+    let headerSpaceContainer = document.createElement('div');
+    headerSpaceContainer.classList.add('header-space-container');
+    headerNav.appendChild(headerNavContainer);
+    headerNav.appendChild(headerSpaceContainer);
     let dropdownIndex = 0;
     let nestedIndex = 0;
 
@@ -120,7 +128,7 @@ function DynamicHeader() {
         {
             link.setAttribute('href', pages_list[i]);
         }
-        headerNav.appendChild(linkDiv);
+        headerNavContainer.appendChild(linkDiv);
     }
 
     header.appendChild(headerNav);

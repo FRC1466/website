@@ -81,6 +81,8 @@ header{
   flex-direction: column;
 }
 
+
+
 #title{
   grid-row-start: 1;
   display: flex;
@@ -124,11 +126,24 @@ header{
   justify-content: space-between;
 }
 
-nav{
+.header-nav-container{
   height: 3rem;
   display: flex;
   justify-content: space-evenly;
   overflow: visible;
+  display:inline-flex;
+  flex-grow:2;
+}
+
+.header-space-container {
+  display: inline-flex;
+  flex-grow: 3;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--header-background-secondary);
 }
 
 .dropdown-button {
@@ -205,7 +220,11 @@ nav{
 }
 
 .navContainer:hover .dropdown-content {
-  display: flex;
+    display: flex;
+}
+
+.navContainer:hover {
+  flex-grow: 8;
 }
 
 .navContainer{
