@@ -5,6 +5,7 @@
   --title-font-color: #fff;
   --nav-font-color: #fff;
   --link-hover: #e5e6eb;
+  --footer-background: rgb(63, 63, 73);
 }
 
 .App {
@@ -260,7 +261,7 @@ nav {
 /* footer */
 
 footer { 
-  background: rgb(100,100,100);
+  background: var(--footer-background);
   display:flex;
   align-items: flex-start;
 }

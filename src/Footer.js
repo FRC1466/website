@@ -28,7 +28,7 @@ function Footer(){
                     </a>
                 </div>
                 <div id='youtube-logo-footer' className='logo-footer'>
-                    <a href='https://www.youtube.com/channel//UCFfOXEsL3QqyypXxH4HnG4g'>
+                    <a href='https://www.youtube.com/channel/UCFfOXEsL3QqyypXxH4HnG4g'>
                         <img src={YT}></img>
                     </a>
                 </div>
@@ -43,7 +43,7 @@ function Footer(){
                     </a>
                 </div>
                 <div id='frc-logo-footer' className='logo-footer'>
-                    <a href='https://www.firstinspires.org/robotics/frc'>
+                    <a href='https://www.firstinspires.org/'>
                         <img src={FIRST}></img>
                     </a>
                 </div>
