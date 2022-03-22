@@ -1,4 +1,4 @@
-This is the new and improved Webb Robotics Website, made with node.js
+This is the new and improved Webb Robotics Website, made with React.js, and hosted with Netlify.
 
 # Getting Started with Create React App
 
