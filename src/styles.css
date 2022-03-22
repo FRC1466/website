@@ -6,6 +6,8 @@
   --nav-font-color: #fff;
   --link-hover: #e5e6eb;
   --footer-background: rgb(63, 63, 73);
+  --divider-color: rgb(192, 192, 202);
+  --font-dark: rgb(218, 216, 226);
 }
 
 .App {
@@ -264,6 +266,8 @@ footer {
   background: var(--footer-background);
   display:flex;
   align-items: flex-start;
+  justify-content: space-between;
+  height: 5rem;
 }
 
 .logo-wrap {
@@ -290,6 +294,16 @@ footer img, .logo-wrap a {
 
 #facebook-logo-footer, #instagram-logo-footer, #twitter-logo-footer, #youtube-logo-footer, #github-logo-footer {
   filter: invert();
+}
+
+.footer-info {
+  color: var(--font-dark);
+  height:100%;
+  width:auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
 }
 
 /* INDEX */
@@ -327,7 +341,6 @@ article{
   width: auto;
   height:auto;
   margin-top: auto;
-  padding-left: 8%;
   font-size: 3rem;
   display: inline-grid;
 }
@@ -396,3 +409,35 @@ article{
 .awards-list{
   text-align: left;
 }
+
+/* FRC */
+
+.about-program-frc img {
+  width: 100%;
+  height: auto;
+}
+
+.about-program-frc p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.frc-container .article-container {
+  text-align: start !important;
+  width:70%;
+  margin: auto;
+  margin-top:4rem;
+}
+
+.frc-container {
+  margin-bottom: 4rem;
+}
+
+.divider hr {
+  background-color: var(--divider-color);
+  height: 2px;
+  border: none;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+

@@ -48,6 +48,9 @@ function Footer(){
                     </a>
                 </div>
             </div>
+            <div class="footer-info"> 
+                9800 Webb School Drive, Knoxville, TN 37923 + email 
+            </div>
         </footer>
     );
 }
