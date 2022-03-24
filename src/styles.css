@@ -8,6 +8,8 @@
   --footer-background: rgb(63, 63, 73);
   --divider-color: rgb(192, 192, 202);
   --font-dark: rgb(218, 216, 226);
+  --home-article-background: rgb(43, 131, 48);
+  --program-background: rgb(35, 35, 39);
 }
 
 .App {
@@ -306,6 +308,99 @@ footer img, .logo-wrap a {
   margin-right: 1rem;
 }
 
+/* HOME */
+
+#team-image {
+  width:100vw;
+  height: auto;
+  display: inline-flex;
+  margin-bottom: 10rem;
+}
+
+#team-image img {
+  width: inherit;
+}
+
+.Home {
+  min-height: 100vh;
+}
+
+#home-quote-container {
+  background-color: var(--home-article-background);
+  display: flex;
+  height:20rem;
+  width: 80%;
+  border: black 1px solid;
+  margin: auto;
+  color: white;
+}
+
+.home-article {
+  height: 40rem;
+  display: flex;
+  width: 70%;
+  margin: 7rem auto 3rem auto;
+  text-align: left;
+  font-size: 20px;
+  flex-flow: row wrap;
+}
+
+.home-article p {
+  display: inline-flex;
+}
+
+#history-title {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+#program-overview {
+  background: var(--program-background);
+  width: 100%;
+  height: 50rem;
+  display: flex;
+}
+
+#program-content-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  margin: auto;
+}
+
+.home-article h {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  border-bottom: var(--divider-color) 2px solid;
+}
+
+.home-quote {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  font-size: 30px;
+  text-align: center;
+  position:relative;
+  top:50%;
+}
+
+.home-quote h {
+  width: 100%;
+  height: auto;
+}
+
+#home-wrapper {
+  display:flex;
+  width:100vw;
+  min-height:inherit;
+  padding-bottom: 3rem;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
 /* INDEX */
 
 article{
@@ -323,17 +418,10 @@ article{
   display:grid;
 }
 
-#index-wrapper {
-  display:grid;
-  width:100vw;
-  height:auto;
-  grid-gap:5rem;
-  padding-top: 4%;
-
-}
-
 .index-item {
   display:inline-grid;
+  margin-left:5rem;
+  margin-right:5rem
 }
 
 .article-title {
@@ -354,9 +442,7 @@ article{
   height:34rem;
 }
 
-.index-img-wrap img {
-  width: 50vw;
-}
+
 
 .index-img-wrap, .FTC-img-wrap, .FLL-img-wrap, .FRC-img-wrap {
   height:auto;

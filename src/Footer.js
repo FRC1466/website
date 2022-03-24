@@ -49,7 +49,7 @@ function Footer(){
                 </div>
             </div>
             <div class="footer-info"> 
-                9800 Webb School Drive, Knoxville, TN 37923 + email 
+                9800 Webb School Drive, Knoxville, TN 37923 <br/> [insert email here with protection] 
             </div>
         </footer>
     );
