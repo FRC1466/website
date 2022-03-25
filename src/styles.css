@@ -1,7 +1,7 @@
 :root {
-  --header-background-main: #068e4a;
-  --header-background-secondary: #49a23e;
-  --header-background-secondary-hover: #489b3d;
+  --header-background-main: #075f29;
+  --header-background-secondary: #1d1d20;
+  --header-background-secondary-hover: #37373a;
   --title-font-color: #fff;
   --nav-font-color: #fff;
   --link-hover: #e5e6eb;
@@ -10,6 +10,8 @@
   --font-dark: rgb(218, 216, 226);
   --home-article-background: rgb(43, 131, 48);
   --program-background: rgb(35, 35, 39);
+  --hover-background-team: #09692e;
+  --hover-background-sponsor: #27272b;
 }
 
 .App {
@@ -53,6 +55,11 @@
 
 /*main*/
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 html {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -61,6 +68,10 @@ body{
   margin: 0px;
   padding: 0px;
   height: auto;
+}
+
+a:visited {
+  color: white;
 }
 
 .page-wrap {
@@ -332,7 +343,7 @@ footer img, .logo-wrap a {
   width: 80%;
   border: black 1px solid;
   margin: auto;
-  color: white;
+  color: var(--title-font-color);
 }
 
 .home-article {
@@ -368,10 +379,33 @@ footer img, .logo-wrap a {
   height: 80%;
   display: flex;
   margin: auto;
+  color: var(--title-font-color);
+  flex-flow: row wrap;
+}
+
+#program-content-container p, #program-content-container ul {
+  font-size: 20px;
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+}
+
+#program-content-title {
+  font-size: 40px;
+  width: 100%;
+  height: fit-content;
+}
+
+#program-content-title h {
+  border-bottom: var(--divider-color) 2px solid;
+  width: fit-content;
+  padding: 0 2rem 4px 2rem;
 }
 
 .home-article h {
-  width: 30%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0 3rem 4px 3rem;
   display: flex;
   justify-content: center;
   border-bottom: var(--divider-color) 2px solid;
@@ -396,9 +430,101 @@ footer img, .logo-wrap a {
   display:flex;
   width:100vw;
   min-height:inherit;
-  padding-bottom: 3rem;
+  padding-bottom: 20rem;
   justify-content: center;
   flex-flow: column wrap;
+}
+
+#sponsor-teams-splash {
+  display: flex;
+  width:100%;
+  height: min-content;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+#team-more {
+  width: 100%;
+  height: min-content;
+  font-size: 40px;
+  margin: 10rem 0;
+}
+
+#team-more h {
+  width: min-content;
+  padding: 0 2rem;
+  border-bottom: var(--divider-color) 3px solid;
+}
+
+.sponsor-button {
+  display: flex;
+  width: 15rem;
+  height: 6rem;
+  background-color: var(--program-background);
+  color: var(--title-font-color);
+  text-align: center;
+  justify-content: center;
+}
+
+.sponsor-button:hover {
+  background-color: var(--hover-background-sponsor);
+}
+
+.sponsor-button a {
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.sponsor-button a span {
+  display: flex;
+  height: min-content;
+  margin: auto;
+}
+
+.team-links {
+  display: flex;
+  width: 80%;
+  padding: 0 20%;
+  height: 10rem;
+  justify-content: space-around;
+}
+
+.FRC-button, .FTC-button, .FLL-button {
+  display: flex;
+  width: 16rem;
+  height: 8rem;
+  background-color: var(--header-background-main);
+  color: var(--title-font-color);
+  justify-content: center;
+  text-align: center;
+}
+
+.FRC-button:hover, .FTC-button:hover, .FLL-button:hover {
+  background-color: var(--hover-background-team);
+}
+
+.FRC-button a, .FTC-button a, .FLL-button a {
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+}
+
+.FRC-button a span, .FTC-button a span, .FLL-button a span {
+  height: min-content;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.FRC-button, .FLL-button {
+  position: relative;
+  top: 50%;
 }
 
 /* INDEX */

@@ -142,8 +142,36 @@ function Home()
                 </div>
                 <div className='home-item' id='program-overview'>
                     <div id='program-content-container'>
-                        <h>The Programs</h>
-                        <p>brief desc</p>
+                        <div id='program-content-title'>
+                            <h>The Programs</h>
+                        </div>
+                        <p>Brief description of programs</p>
+                        <ul>
+                            <li>Core Value</li>
+                            <li>Value</li>
+                            <li>etc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className='home-item' id='sponsor-teams-splash'>
+                    <div className='sponsor-button'>
+                        <a href='./Sponsors'>
+                        <span>Sponsor Us</span>
+                        </a>
+                    </div>
+                    <div id='team-more'>
+                        <h>The Teams:</h>
+                    </div>
+                    <div className='team-links'>
+                        <div className='FRC-button'>
+                            <a href='./FRC'><span>FRC</span></a>
+                        </div>
+                        <div className='FTC-button'>
+                            <a href='./FTC'><span>FTC</span></a>
+                        </div>
+                        <div className='FLL-button'>
+                            <a href='./FLL'><span>FLL</span></a>
+                        </div>
                     </div>
                 </div>
            </div>
