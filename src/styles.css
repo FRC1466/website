@@ -653,3 +653,28 @@ article{
   margin-bottom:2rem;
 }
 
+/* Training Modules page*/
+
+.training-link {
+  color: #1c1ce6 !important;
+}
+
+.training-link:hover {
+  color: #5880ee !important;
+}
+
+.training-table{
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.training-table li {
+  display: table-cell;
+  text-align: center;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
