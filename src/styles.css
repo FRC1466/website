@@ -676,5 +676,15 @@ article{
   text-align: center;
   vertical-align: top;
   word-wrap: break-word;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
+.train-img {
+  width: 50%;
+  height: auto;
+}
+
+.train-category {
+  padding: 5px;
+}

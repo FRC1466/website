@@ -1,7 +1,7 @@
 import '../../styles.css';
 import { Link } from 'react-router-dom';
-import FLL_t from '../../media/stock/FLL_tournament.jpg'
-import FIRST_l from '../../media/stock/FIRST-light.png'
+import Elec from '../../media/photo-gallery/Training/Electrical.jpg'
+import Safe from '../../media/photo-gallery/Training/Safety.jpg'
 
 function FRC_Training(){
     return(
@@ -14,9 +14,11 @@ function FRC_Training(){
                 <ul className='training-table'>
                 <li>
                 <div className='training-item'>
-                    <strong>
+                    <strong className='training-category'>
                         Electrical
                     </strong>
+                    <br/>
+                    <img className='train-img' src={Elec}/>
                     <article>
                     <p>
                         The Electrical subteam has always been an integral part of the FRC team, and as FRC switches to a somewhat new electronics board for the next season 
@@ -31,9 +33,11 @@ function FRC_Training(){
                 </li>
                 <li>
                 <div className='training-item'>
-                    <strong>
+                    <strong className='training-category'>
                         General Safety
                     </strong>
+                    <br/>
+                    <img className='train-img' src={Safe}/>
                     <p>
                         Safety is always our top priority when we are working, no matter if it is mechanical, electrical, code, or even CAD.
                         Thus the team makes sure to utilize the safety modules every offseason to properly ensure the security of new team members.
