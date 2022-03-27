@@ -25,9 +25,6 @@ function FRC_Training(){
                         it is even more important than ever for us to have people trained on how to properly use the tools that will help us learn
                         the new system.
                     </p>
-                    <p>
-                        <Link to='/FRC/Training/Electrical' className='training-link'>View our Electrical Training Resources</Link>
-                    </p>
                     </article>
                 </div>
                 </li>
@@ -42,12 +39,18 @@ function FRC_Training(){
                         Safety is always our top priority when we are working, no matter if it is mechanical, electrical, code, or even CAD.
                         Thus the team makes sure to utilize the safety modules every offseason to properly ensure the security of new team members.
                     </p>
-                    <p>
-                        <Link to='/FRC/Training/Safety' className='training-link'>View our General Safety Training Resources</Link>
-                    </p>
                 </div>
                 </li>
                 </ul>
+                <ul className='training-table'>
+                    <li>
+                        <Link to='/FRC/Training/Electrical' className='training-link'>View our Electrical Training Resources</Link>
+                    </li>
+                    <li>
+                        <Link to='/FRC/Training/Safety' className='training-link'>View our General Safety Training Resources</Link>
+                    </li>
+                </ul>
+                <br/>
             <p>
                 More Training Resources Coming soon!
             </p>

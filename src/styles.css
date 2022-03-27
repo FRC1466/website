@@ -688,3 +688,9 @@ article{
 .train-category {
   padding: 5px;
 }
+
+/* Robots */
+
+.high-res-robot {
+  width: 62%;
+}
