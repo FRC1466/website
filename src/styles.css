@@ -325,11 +325,13 @@ footer img, .logo-wrap a {
   width:100vw;
   height: auto;
   display: inline-flex;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
+  background-color: var(--header-background-secondary);
 }
 
 #team-image img {
   width: inherit;
+  height: fit-content;
 }
 
 .Home {
@@ -653,3 +655,26 @@ article{
   margin-bottom:2rem;
 }
 
+/* PHOTOS */
+.photo-spread {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: auto;
+  width: 100vw;
+  padding-bottom: 15rem;
+}
+
+
+.photo-entry {
+  display: flex;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.photo-entry img {
+  width: auto;
+  height: 30rem;
+}

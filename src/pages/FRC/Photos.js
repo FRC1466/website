@@ -1,14 +1,37 @@
 import '../../styles.css';
 
+/* copypaste <img src='https://drive.google.com/uc?export=view&id=1bpMr1lLAm5DHHZTnBTT5xyQlIgEN2Ibd/'></img> */
+
 function Photos_FRC(){
     return(
-        <div className="FRC">
+        <div className="photo-wrapper">
             <strong className='article-title'>FRC 1466 Photo Gallery</strong>
 
             {/* JS Time (eventually)*/}
             <p>
-                Work in progress, will have some info here soon
+                Work in progress, will have more dynamic photos here soon
             </p>
+            <div className='photo-spread'>
+                <div className='photo-entry'>
+                    <img src='https://drive.google.com/uc?export=view&id=1bpMr1lLAm5DHHZTnBTT5xyQlIgEN2Ibd'></img>
+                </div>
+                <div className='photo-entry'>
+                    <img src='https://drive.google.com/uc?export=view&id=1bnJCQSyuXpIcU6xNrEB7WomlOhBMsR3W'></img>
+                </div>
+                <div className='photo-entry'>
+                    <img src='https://drive.google.com/uc?export=view&id=1GQO4OzvvTJvesTUNvJebh8dwQROJTBqi'></img>
+                </div>
+                <div className='photo-entry'>
+                    <img src='https://drive.google.com/uc?export=view&id=1GzNf3pAIDgwiRWm3aZZclA6311XsMjiE'></img>
+                </div>
+                <div className='photo-entry'>
+                    <img src='https://drive.google.com/uc?export=view&id=1VzOzape-uFc8fqFYNox1RuZcrdUxFCWI'></img>
+                </div>
+                <div className='photo-entry'>
+                    <img src='https://drive.google.com/uc?export=view&id=1LvtB-wWbRw43_nAJzhUEE-vBia9B6FrT'></img>
+                </div>
+                <div className='photo-entry'></div>
+            </div>
         </div>
     );
 }
