@@ -341,8 +341,9 @@ footer img, .logo-wrap a {
 #home-quote-container {
   background-color: var(--home-article-background);
   display: flex;
-  height:20rem;
-  width: 80%;
+  height:fit-content;
+  width: fit-content;
+  padding: 5rem;
   border: black 1px solid;
   margin: auto;
   color: var(--title-font-color);
@@ -419,13 +420,13 @@ footer img, .logo-wrap a {
   height: 50%;
   font-size: 30px;
   text-align: center;
-  position:relative;
-  top:50%;
+  margin: auto;
 }
 
 .home-quote h {
   width: 100%;
-  height: auto;
+  height: fit-content;
+  margin: auto;
 }
 
 #home-wrapper {
@@ -527,6 +528,10 @@ footer img, .logo-wrap a {
 .FRC-button, .FLL-button {
   position: relative;
   top: 50%;
+}
+
+#program-content-container ul li {
+  padding-bottom: 8px;
 }
 
 /* INDEX */

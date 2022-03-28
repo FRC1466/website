@@ -123,7 +123,7 @@ function Home()
                 <div className='home-item' id='home-quote-container'>
                     <div className='home-quote'>
                         <h>
-                            "Mission" -by Team
+                            "Go Farther. Go Further." - Webb School of Knoxville
                         </h>
                     </div>
                 </div>
@@ -143,13 +143,33 @@ function Home()
                 <div className='home-item' id='program-overview'>
                     <div id='program-content-container'>
                         <div id='program-content-title'>
-                            <h>The Programs</h>
+                            <h>The Program</h>
                         </div>
-                        <p>Brief description of programs</p>
+                        <p>[revise] At Webb, students learn leadership, teamwork, and responsibility. Robotics takes that further.</p>
                         <ul>
-                            <li>Core Value</li>
-                            <li>Value</li>
-                            <li>etc.</li>
+                            <li>Through mentorship, students learn the basics of mechanical engineering, computer aided design (CAD), 
+                                electrical enginnering, and coding. As they settle into a role, they further their learning individually.
+                            </li>
+                            <li>Project prioritization is a key value when working on robots. Members learn how to effectively manage 
+                                their limited competition time to maximize the amount of points they can get at the end of the season. 
+                            </li>
+                            <li>As students become more integrated into the team, they begin to take leadership roles. Members learn how to
+                                manage groups of people and designate roles. They slowly transform into inspiring leaders that the rest of the team looks up to.
+                            </li>
+                            <li>
+                                Teamwork is an essential part of robotics, and at Webb, this is taken further. New members are enthusiastically
+                                welcomed into the team, where they learn their dynamic with the rest of the team. Members are trusted with different tasks, 
+                                and learn to reciprocate that trust.
+                            </li>
+                            <li>
+                                As team members are assigned jobs, they learn to fulfill their duties with enthusiasm. 
+                            </li>
+                            <li>
+                                Business skills
+                            </li>
+                            <li>
+                                Networking
+                            </li>
                         </ul>
                     </div>
                 </div>
