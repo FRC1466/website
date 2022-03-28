@@ -118,7 +118,7 @@ function Home()
        <div className='Home'>
            <div id='home-wrapper'>
                <div id='team-image'>
-                   <img src={FRC_t}></img>
+                   <img src='https://drive.google.com/uc?export=view&id=1wFlyxg6Q3uLliWNEyqJMV9iIZO6ifcGy'></img>
                </div>
                 <div className='home-item' id='home-quote-container'>
                     <div className='home-quote'>
