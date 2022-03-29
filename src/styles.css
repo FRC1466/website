@@ -290,6 +290,7 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
   height: fit-content;
+  max-width: 100vw;
 }
 
 .logo-wrap {
