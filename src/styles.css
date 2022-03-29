@@ -260,6 +260,8 @@ nav {
   flex-flow: row wrap;
   overflow: visible;
   flex-grow: 1;
+  min-height: fit-content;
+  min-width: fit-content;
 
 }
 
@@ -275,6 +277,8 @@ nav {
   width: 100%;
   color: var(--nav-font-color);
   height: 3rem;
+  min-height: fit-content;
+  min-width: fit-content;
 }
 
 
@@ -294,7 +298,7 @@ footer {
   margin: auto 0;
   min-width: fit-content;
   max-width: 50vw;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .logo-footer {
