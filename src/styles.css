@@ -92,13 +92,14 @@ a:hover {
   margin: 2vh 2vw 2vh 2vw; 
 }
 
-header{
+header {
   grid-column-start: 1;
   grid-column-end: span 3;
   margin: 0px;
   background: var(--header-background-main);
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 
@@ -108,11 +109,11 @@ header{
   display: flex;
   margin-top: auto;
   margin-bottom: auto;
-  height: 5rem;
+  height: fit-content;
 }
 
 #title img{
-  height: 100%;
+  height: 80px;
   margin-left: 1rem;
   display:inline-flex;
   
@@ -120,13 +121,14 @@ header{
 
 #title a{
   font-size: 40px;
-  width:20rem;
+  width:fit-content;
+  height: fit-content;
   color: var(--title-font-color);
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  padding-left:2%;
   text-align: left;
+  margin: auto 0;
 }
 
 .team-header p {
@@ -134,7 +136,7 @@ header{
   font-size: 24px;
   margin-top: auto;
   margin-bottom: auto;
-  padding-right:2rem;
+  padding-right:2vw;
 }
 
 .team-header {
@@ -281,18 +283,19 @@ footer {
   display:flex;
   align-items: flex-start;
   justify-content: space-between;
-  height: 5rem;
+  height: fit-content;
 }
 
 .logo-wrap {
   display:flex;
   justify-content: center;
+  margin: auto 0;
 }
 
 .logo-footer {
   display: inline-flex;
-  height: 3rem;
-  margin: auto 0px auto 1rem;
+  height: 7vh;
+  margin: auto 0px auto 10px;
 }
 
 footer img, .logo-wrap a {
@@ -303,7 +306,7 @@ footer img, .logo-wrap a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   filter: none;
-  height:2.5rem;
+  height:8vh;
 }
 
 #facebook-logo-footer, #instagram-logo-footer, #twitter-logo-footer, #youtube-logo-footer, #github-logo-footer {
@@ -317,7 +320,8 @@ footer img, .logo-wrap a {
   display:flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin: auto 1rem auto 0;
+  font-size: 14px;
 }
 
 /* HOME */
@@ -400,6 +404,11 @@ footer img, .logo-wrap a {
   font-size: 40px;
   width: 100%;
   height: fit-content;
+}
+
+.title-container {
+  height: fit-content;
+  width: fit-content;
 }
 
 #program-content-title h {
@@ -493,16 +502,16 @@ footer img, .logo-wrap a {
 
 .team-links {
   display: flex;
-  width: 80%;
-  padding: 0 20%;
+  width: 90%;
+  padding: 0 5%;
   height: 10rem;
   justify-content: space-around;
 }
 
 .FRC-button, .FTC-button, .FLL-button {
   display: flex;
-  width: 16rem;
-  height: 8rem;
+  width: 17vw;
+  height: 13vw;
   background-color: var(--header-background-main);
   color: var(--title-font-color);
   justify-content: center;
