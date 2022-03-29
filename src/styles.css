@@ -195,6 +195,7 @@ nav {
   display: inline-flex !important;
   width: 100% !important;
   flex-flow: column wrap;   
+  min-height: fit-content;
 }
 
 .dropdown-link-container {
@@ -205,8 +206,6 @@ nav {
   position: relative;
   z-index:1;
   min-height: fit-content;
-  max-height: 50vw;
-  overflow: scroll;
 }
 
 .dropdown-nested-container {
@@ -294,6 +293,8 @@ footer {
   justify-content: center;
   margin: auto 0;
   min-width: fit-content;
+  max-width: 50vw;
+  overflow: scroll;
 }
 
 .logo-footer {
