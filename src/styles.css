@@ -204,6 +204,9 @@ nav {
   overflow: visible;
   position: relative;
   z-index:1;
+  min-height: fit-content;
+  max-height: 50vw;
+  overflow: scroll;
 }
 
 .dropdown-nested-container {
@@ -290,6 +293,7 @@ footer {
   display:flex;
   justify-content: center;
   margin: auto 0;
+  min-width: fit-content;
 }
 
 .logo-footer {
@@ -348,7 +352,7 @@ footer img, .logo-wrap a {
   display: flex;
   height:fit-content;
   width: fit-content;
-  padding: 5rem;
+  padding: 3rem;
   border: black 1px solid;
   margin: auto;
   color: var(--title-font-color);
