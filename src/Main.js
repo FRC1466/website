@@ -5,6 +5,7 @@ import FIRST from './pages/FIRST.js';
 import FLL from './pages/team/FLL.js';
 import FTC from './pages/team/FTC.js';
 import FRC from './pages/team/FRC.js';
+import Sponsors from './pages/team/Sponsors.js';
 
 import About_FRC from './pages/FRC/About.js';
 import Events_FRC from './pages/FRC/Events.js';
@@ -48,6 +49,7 @@ function Main(){
             <Route path='/FLL' element={<FLL />}/>
             <Route path='/FTC' element={<FTC />}/>
             <Route path='/FRC' element={<FRC />}/>
+            <Route path='/Sponsors' element={<Sponsors />}/>
 
             {/* FRC Pages */}
 
