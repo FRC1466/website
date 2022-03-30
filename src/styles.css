@@ -158,7 +158,7 @@ header {
   overflow: visible;
   display:inline-flex;
   flex-grow:2;
-  align-items:start;
+  align-items:flex-start;
 }
 
 .header-space-container {
@@ -171,7 +171,7 @@ nav {
   justify-content: space-evenly;
   background-color: var(--header-background-secondary);
   width:100vw;
-  align-items:start;
+  align-items:flex-start;
 }
 
 .dropdown-button {
