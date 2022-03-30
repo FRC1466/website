@@ -5,6 +5,7 @@ import FIRST_l from '../media/stock/FIRST-light.png'
 import FTC_t from '../media/stock/FTC-tournament.jpg'
 import FRC_t from '../media/stock/FRC-tournament.jpg'
 import { Link } from 'react-router-dom'
+import Team from '../media/team/IMG_3594.jpg'
 
 function PrevHome()
 {
@@ -118,7 +119,7 @@ function Home()
        <div className='Home'>
            <div id='home-wrapper'>
                <div id='team-image'>
-                   <img src='https://drive.google.com/uc?export=view&id=1wFlyxg6Q3uLliWNEyqJMV9iIZO6ifcGy'></img>
+                   <img src={Team} alt='Team in lab'></img>
                </div>
                 <div className='home-item' id='home-quote-container'>
                     <div className='home-quote'>
