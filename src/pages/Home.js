@@ -145,30 +145,29 @@ function Home()
                         <div id='program-content-title'>
                             <h>The Program</h>
                         </div>
-                        <p>[revise] At Webb, students learn leadership, teamwork, and responsibility. Robotics takes that further.</p>
+                        <p>At Webb, students learn leadership, teamwork, and responsibility. The robotics program takes that further.</p>
                         <ul>
                             <li>Through mentorship, students learn the basics of mechanical engineering, computer aided design (CAD), 
-                                electrical enginnering, and coding. As they settle into a role, they further their learning individually.
+                                electrical enginnering, and coding. As they settle into a role, they further their learning independently.
                             </li>
                             <li>Project prioritization is a key value when working on robots. Members learn how to effectively manage 
-                                their limited competition time to maximize the amount of points they can get at the end of the season. 
+                                the limited competition time to maximize the amount of points and robot progress they can achieve at the end of the season. 
                             </li>
                             <li>As students become more integrated into the team, they begin to take leadership roles. Members learn how to
-                                manage groups of people and designate roles. They slowly transform into inspiring leaders that the rest of the team looks up to.
+                                manage groups of people and designate roles. They eventually transform into inspiring leaders that the rest of the team looks up to.
                             </li>
                             <li>
                                 Teamwork is an essential part of robotics, and at Webb, this is taken further. New members are enthusiastically
                                 welcomed into the team, where they learn their dynamic with the rest of the team. Members are trusted with different tasks, 
-                                and learn to reciprocate that trust.
+                                and learn to reciprocate that trust as their taskload changes.
                             </li>
                             <li>
-                                As team members are assigned jobs, they learn to fulfill their duties with enthusiasm. 
+                                Members learn business skills as they learn to contact sponsors and give a convincing
+                                pitch about the team.
                             </li>
                             <li>
-                                Business skills
-                            </li>
-                            <li>
-                                Networking
+                                Networking is a vital component members learn when attending competitions and in general. Team collaborations
+                                and cooperation allow members to meet new people and make relationships between other teams.
                             </li>
                         </ul>
                     </div>
