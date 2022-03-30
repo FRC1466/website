@@ -263,7 +263,7 @@ nav {
   overflow: visible;
   flex-grow: 1;
   min-height: fit-content;
-  min-width: fit-content;
+  min-width: 100px;
 
 }
 
