@@ -307,7 +307,9 @@ footer {
 
 .logo-footer {
   display: inline-flex;
-  height: 7vh;
+  width: calc(100vw/7);
+  max-width: fit-content;
+  height: 3em;
   margin: auto 0px auto 10px;
 }
 
@@ -319,7 +321,6 @@ footer img, .logo-wrap a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   filter: none;
-  height:8vh;
 }
 
 #facebook-logo-footer, #instagram-logo-footer, #twitter-logo-footer, #youtube-logo-footer, #github-logo-footer {
@@ -523,8 +524,10 @@ footer img, .logo-wrap a {
 
 .FRC-button, .FTC-button, .FLL-button {
   display: flex;
-  width: 17vw;
+  width: 25vw;
+  max-width: 15em;
   height: 13vw;
+  max-height: 25em;
   background-color: var(--header-background-main);
   color: var(--title-font-color);
   justify-content: center;
