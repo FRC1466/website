@@ -334,8 +334,8 @@ footer img, .logo-wrap a {
   display:flex;
   align-items: center;
   justify-content: center;
-  margin: auto 1rem auto 0;
-  font-size: 14px;
+  margin: auto 1rem;
+  font-size: 16px;
 }
 
 /* HOME */
@@ -358,7 +358,7 @@ footer img, .logo-wrap a {
 }
 
 #home-quote-container {
-  background-color: var(--home-article-background);
+  background-color: var(--header-background-main);
   display: flex;
   height:fit-content;
   width: fit-content;
@@ -371,7 +371,7 @@ footer img, .logo-wrap a {
 .home-article {
   height: fit-content;
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: 7rem auto 3rem auto;
   text-align: left;
   font-size: 20px;
@@ -412,6 +412,7 @@ footer img, .logo-wrap a {
   width: 100%;
   height: fit-content;
   text-align: left;
+  margin-top: 2em;
 }
 
 #program-content-title {
@@ -434,7 +435,7 @@ footer img, .logo-wrap a {
 .home-article h {
   width: fit-content;
   height: fit-content;
-  padding: 0 3rem 4px 3rem;
+  padding: 0 2rem 4px 2rem;
   display: flex;
   justify-content: center;
   border-bottom: var(--divider-color) 2px solid;
@@ -477,7 +478,7 @@ footer img, .logo-wrap a {
   width: 100%;
   height: min-content;
   font-size: 40px;
-  margin: 10rem 0;
+  margin: 7rem 0;
 }
 
 #team-more h {
@@ -526,8 +527,8 @@ footer img, .logo-wrap a {
   display: flex;
   width: 25vw;
   max-width: 15em;
-  height: 13vw;
-  max-height: 25em;
+  height: 17vw;
+  max-height: 10em;
   background-color: var(--header-background-main);
   color: var(--title-font-color);
   justify-content: center;
