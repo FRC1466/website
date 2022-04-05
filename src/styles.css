@@ -708,6 +708,7 @@ article{
   width: fit-content;
   height: 30rem;
   overflow: hidden;
+  border: white 1px solid;
 }
 
 .photo-entry img {
