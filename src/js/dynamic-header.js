@@ -48,7 +48,8 @@ function DynamicHeader() {
     const nested_dropdown_content = ['nest1.html', 'nest2.html', 'nest3.html'];
     const nested_dropdown_name = ['nest1', 'nest2', 'nest3'];
 
-    let headerNav = document.createElement('nav');
+    let headerNav = document.createElement('div');
+    headerNav.classList.add('nav');
     let headerNavContainer = document.createElement('div');
     headerNavContainer.classList.add('header-nav-container');
     let headerSpaceContainer = document.createElement('div');
@@ -134,6 +135,22 @@ function DynamicHeader() {
     header.appendChild(headerNav);
     document.getElementsByClassName('App')[0].prepend(header);
     console.log("dynamic-header.js has loaded");
+
+    var navigationBar = document.getElementsByClassName('nav');
+    var sticky = navigationBar.offsetTop;
+    
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navigationBar.classList.add("sticky")
+            console.log(navigationBar);
+        } else {
+            navigationBar.classList.remove("sticky");
+        }
+    }
+    window.onscroll = function() {myFunction()};
+    console.log('test');
+
 
     return(0);
 }
