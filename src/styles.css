@@ -82,6 +82,7 @@ a:visited {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
@@ -166,7 +167,7 @@ header {
   flex-grow: 5;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--header-background-secondary);
@@ -473,14 +474,14 @@ footer img, .logo-wrap a {
   height: min-content;
   flex-flow: row wrap;
   justify-content: center;
-  padding-top: 10rem;
 }
 
 #team-more {
   width: 100%;
   height: min-content;
   font-size: 40px;
-  margin: 7rem 0;
+  position: relative;
+  top: 4em;
 }
 
 #team-more h {
@@ -663,8 +664,9 @@ article{
 /* FRC */
 
 .about-program-frc img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: 0 10vw;
 }
 
 .about-program-frc p {
@@ -674,7 +676,7 @@ article{
 
 .frc-container .article-container {
   text-align: start !important;
-  width:70%;
+  width:90%;
   margin: auto;
   margin-top:4rem;
 }
