@@ -67,11 +67,6 @@ function Home()
                     </div>
                 </div>
                 <div className='home-item' id='sponsor-teams-splash'>
-                    <div className='sponsor-button'>
-                        <a href='./Sponsors'>
-                        <span>Sponsor Us</span>
-                        </a>
-                    </div>
                     <div id='team-more'>
                         <h>The Teams:</h>
                     </div>
@@ -84,6 +79,11 @@ function Home()
                         </div>
                         <div className='FLL-button'>
                             <a href='./FLL'><span>FLL</span></a>
+                        </div>
+                        <div className='sponsor-button'>
+                            <a href='./Sponsors'>
+                            <span>Sponsor Us</span>
+                            </a>
                         </div>
                     </div>
                 </div>
