@@ -80,11 +80,11 @@ function Home()
                         <div className='FLL-button'>
                             <a href='./FLL'><span>FLL</span></a>
                         </div>
-                        <div className='sponsor-button'>
+                    </div>
+                    <div className='sponsor-button'>
                             <a href='./Sponsors'>
                             <span>Sponsor Us</span>
                             </a>
-                        </div>
                     </div>
                 </div>
            </div>

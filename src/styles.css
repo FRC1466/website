@@ -463,7 +463,7 @@ footer img, .logo-wrap a {
   display:flex;
   width:100vw;
   min-height:inherit;
-  padding-bottom: 20rem;
+  padding-bottom: 16rem;
   justify-content: center;
   flex-flow: column wrap;
 }
@@ -480,8 +480,7 @@ footer img, .logo-wrap a {
   width: 100%;
   height: min-content;
   font-size: 40px;
-  position: relative;
-  top: 4em;
+  padding-top: 3em;
 }
 
 #team-more h {
@@ -498,6 +497,8 @@ footer img, .logo-wrap a {
   color: var(--title-font-color);
   text-align: center;
   justify-content: center;
+  position: relative;
+  top: 3em;
 }
 
 .sponsor-button:hover {
@@ -522,6 +523,7 @@ footer img, .logo-wrap a {
   display: flex;
   width: 90%;
   padding: 0 5%;
+  padding-top: 5em;
   height: 10rem;
   justify-content: space-around;
 }
