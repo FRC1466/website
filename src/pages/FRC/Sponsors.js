@@ -4,7 +4,7 @@ function Sponsors_FRC(){
     return(
         <div className="FRC">
             <p>
-                Work in progress, will have some info here soon
+                Hopefully soonn
             </p>
         </div>
     );
